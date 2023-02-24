@@ -3,19 +3,9 @@ import './App.css';
 import { useState } from 'react';
 
 export default function App() {
-  // const [tile, setTile] = useState({
-  //   id: 0,
-  //   titleMessage: '',
-  //   bodyMessage: '',
-  // });
-  const hello = 'hello';
-
-  // function sayHello() {
-  //   console.log('hello');
-  // }
-  // function handleSubmit(params) {
-  //   console.log('say hello');
-  // }
+  // const [tileTitle, settileTitle] = useState('');
+  // const [tileBody, setTileBody] = useState('');
+  // const [isEditing, setIsEditing] = useState(false);
 
   return (
     <div className='app'>
@@ -31,16 +21,16 @@ export default function App() {
           <form>
             <div>
               <input className='tileTitle' type='text' />
-              <button>x</button>
+              <button className='tileButton'>x</button>
             </div>
             <input className='tileBody' type='text' />
           </form>
         </div>
         <div className='card'>
-          <form onSubmit={handleSubmit}>
+          <form>
             <div>
               <input className='tileTitle' type='text' />
-              <button onClick={sayHello}>x</button>
+              <button className='tileButton'>x</button>
             </div>
             <input className='tileBody' type='text' />
           </form>
